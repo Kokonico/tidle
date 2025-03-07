@@ -45,7 +45,7 @@ This is the *Command Line Interface* (CLI) of the game. You can interact with th
 Each tier of currency can be created by exchanging 100x of the previous currency. 100 ticks = 1 cycle, 100 cycles = 1 process, 100 processes = 1 loop and so on.
 
 ### Upgrades
-Upgrades can be purchased from the store. They can provide a variety of benefits.
+Upgrades can be purchased from the store. They can provide a variety of benefits. As you get more of an upgrade, the cost of the next one increases. The upgrades are as follows:
 - `Generator Efficiency`: increases the amount of ticks generated per `generate` command by 1.
 - `Auto Generator`: automatically generates 1 extra tick per second.
 - `Cycle Booster`: automatically generates 1 extra cycle per second.
