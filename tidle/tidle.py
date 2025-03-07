@@ -501,6 +501,7 @@ def main():
             command_args = command[1:]
         except IndexError:
             print("No command entered.")
+            continue
         # it's command time
         if command_name in [command.name for command in game.commands]:
             for command in game.commands:
