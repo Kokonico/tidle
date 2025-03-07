@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tidle"
-version = "1.0.5"
+version = "1.0.6"
 description = "tidle, the idle game."
 authors = ["Kokonico <kokonico@duck.com>"]
 scripts = { "tidle" = "tidle.cli:main"}
