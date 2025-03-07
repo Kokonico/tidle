@@ -496,8 +496,11 @@ def main():
         print("\033[0m | ".join([f"{COLORS[currency]}{currency}: {game.auto_resources[currency]}" for currency in game.auto_resources]) + "\033[0m")
         command = input("||> ").split()
         # break the input into command and arguments
-        command_name = command[0]
-        command_args = command[1:]
+        try:
+            command_name = command[0]
+            command_args = command[1:]
+        except IndexError:
+            print("No command entered.")
         # it's command time
         if command_name in [command.name for command in game.commands]:
             for command in game.commands:
