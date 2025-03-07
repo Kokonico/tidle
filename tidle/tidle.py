@@ -323,7 +323,7 @@ class Game:
 
     def delete_save(self):
         really_delete = input("Are you sure you want to delete your save? It's irreversible. (y/n) ")
-        if really_delete.lower() == "yes":
+        if really_delete.lower() == "y":
             os.remove(os.path.join(FOLDER, "game.pkl"))
             print("Save deleted, see you another time.")
             exit()
@@ -439,7 +439,7 @@ class Game:
                         self.resources[upgrade["currency"]] -= cost
                         upgrade["effect"]()
                         self.upgrade_levels[upgrade["name"]] += 1  # Upgrade quality increases
-                        print(f"Purchased {upgrade['name']} {to_roman(level + 2)}! Upgrades are now more expensive.")
+                        print(f"Purchased {upgrade['name']} {to_roman(level + 1)}! Upgrades are now more expensive.")
                     else:
                         print("Not enough currency!")
                 else:
