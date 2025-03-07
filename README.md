@@ -5,6 +5,7 @@
 ```bash
 pip install tilde
 ```
+ps: ensure that your python executables are on your PATH, or it won't work.
 
 ## Usage
 ```bash
