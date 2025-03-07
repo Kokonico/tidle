@@ -373,20 +373,24 @@ class Game:
             amount = int(amount)
         except ValueError:
             print("Invalid amount.")
+            return
 
         if currency1 not in tiers or currency2 not in tiers:
-            raise ValueError("Invalid currency type.")
+            print("Invalid currency.")
+            return
 
         index1, index2 = tiers.index(currency1), tiers.index(currency2)
 
         if index1 >= index2:
             print("Invalid exchange direction. You can only exchange currency to a higher tier.")
+            return
 
         exchange_rate = 100 ** (index2 - index1)
         required_currency1 = amount * exchange_rate
 
         if self.resources[currency1] < required_currency1:
             print("Insufficient currency to exchange.")
+            return
 
         # Deduct currency1 and add currency2
         self.resources[currency1] -= required_currency1
