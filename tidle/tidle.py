@@ -311,7 +311,7 @@ class Game:
         self.auto_resources["processes"] += 1
 
     def increase_auto_loops(self):
-        self.auto_resources["loops"] = int(self.auto_resources["loops"] * 1.1)
+        self.auto_resources["loops"] = int(self.auto_resources["loops"] + 1)
 
     # COMMANDS
 
