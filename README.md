@@ -1,4 +1,4 @@
-# Tilde
+# Tidle
 > an open-source, small idle game in the terminal.
 
 ## Installation
